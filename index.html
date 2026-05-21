@@ -13,138 +13,262 @@
 
     <main class="desktop-area">
         
-        <div class="macbook-window">
-            
-            <div class="macbook-header">
-                <div class="macbook-dots">
-                    <span class="dot dot-close" id="btn-close-tab" title="Fermer l'onglet"></span>
-                    <span class="dot dot-minimize"></span>
-                    <span class="dot dot-maximize"></span>
-                </div>
-                <span class="window-title" id="current-tab-title">Accueil</span>
+        <div class="os-window home-window">
+            <div class="os-header">
+                <span class="window-title">accueil</span>
             </div>
+            
+            <div class="window-body home-body">
+                <div class="home-hero">
+                    <h1 class="hero-main-title">Salut ! <span class="highlight">Je suis Sirine</span></h1>
+                    <p class="hero-subtitle">Développeuse web, étudiante en BTS SIO SLAM</p>
+                </div>
 
-            <div class="window-body">
-                
-                <section id="content-home" class="tab-section active">
-                    <div class="home-hero">
-                        <h1 class="hero-main-title">Salut ! <span class="highlight">Je suis Sirine</span></h1>
-                        <p class="hero-subtitle">Développeuse web, étudiante en BTS SIO SLAM</p>
-                    </div>
-
-                    <nav class="inner-menu">
-                        <button class="menu-item-btn" data-tab="about" data-title="À propos">
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                            </div>
-                            <span>À propos</span>
-                        </button>
-
-                        <button class="menu-item-btn" data-tab="entreprise" data-title="Entreprise">
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                            </div>
-                            <span>Entreprise</span>
-                        </button>
-
-                        <button class="menu-item-btn" data-tab="projets" data-title="Projets">
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-                            </div>
-                            <span>Projets</span>
-                        </button>
-
-                        <button class="menu-item-btn" data-tab="veille" data-title="Veille tech">
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                            </div>
-                            <span>Veille</span>
-                        </button>
-
-                        <button class="menu-item-btn" data-tab="contact" data-title="Contact">
-                            <div class="icon-circle">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            </div>
-                            <span>Contact</span>
-                        </button>
-                    </nav>
-                </section>
-
-                <section id="content-about" class="tab-section inner-page">
-                    <div class="profile-header">
-                        <div class="profile-avatar">
-                            <img src="http://googleusercontent.com/image_collection/image_retrieval/6114319242508135783" alt="Sirine Grich">
+                <nav class="inner-menu">
+                    <button class="menu-item-btn" data-target="window-about">
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                         </div>
-                        <div class="profile-meta">
-                            <h2 class="profile-name"><span class="highlight">Sirine</span> Grich</h2>
-                            <p class="job-title">Développeuse web en alternance</p>
-                            <p class="meta-info">Lyon, France</p>
+                        <span>à propos</span>
+                    </button>
+                    <button class="menu-item-btn" data-target="window-entreprise">
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                         </div>
-                    </div>
-                    
-                    <div class="profile-text">
-                        <p>Je prépare actuellement mon BTS SIO option SLAM (Solutions Logicielles et Applications Métiers). Passionnée par le développement et le design épuré, j'aime concevoir des applications web claires, modernes et performantes.</p>
-                        <br>
-                        <p>Depuis un an, je combine rigueur technique et créativité pour répondre aux besoins numériques de mon entreprise d'accueil, dans laquelle je développe des blocs de code sur-mesure via WordPress.</p>
-                    </div>
-                </section>
-
-                <section id="content-entreprise" class="tab-section inner-page">
-                    <h2>SIET Déménagement</h2>
-                    <p class="meta-info">PME spécialisée dans le transport et la logistique</p>
-                    <div class="custom-block">
-                        <strong>Mon rôle au pôle informatique :</strong>
-                        <p>Intégration au sein de l'équipe technique pour le développement, la maintenance et l'optimisation des applications internes et des plateformes web de l'entreprise.</p>
-                    </div>
-                </section>
-
-                <section id="content-projets" class="tab-section inner-page">
-                    <h2>Mes réalisations</h2>
-                    <article class="project-box">
-                        <div class="project-title-row">
-                           <h3>Refonte du site institutionnel</h3>
-                           <span class="loc">SIET Déménagement</span>
+                        <span>entreprise</span>
+                    </button>
+                    <button class="menu-item-btn" data-target="window-projets">
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                         </div>
-                        <div class="tags">
-                            <span>WordPress</span><span>Elementor</span><span>PHP</span><span>Custom code</span>
+                        <span>projets</span>
+                    </button>
+                    <button class="menu-item-btn" data-target="window-veille">
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                         </div>
-                        <p>Conception et intégration de blocs de code personnalisés pour étendre les fonctionnalités d'Elementor gratuit. Utilisation de l'IA pour optimiser le refactoring des scripts PHP/CSS.</p>
-                    </article>
-                </section>
-
-                <section id="content-veille" class="tab-section inner-page">
-                    <h2>Veille technologique</h2>
-                    <div class="custom-block">
-                        <h3>L'intelligence artificielle dans le dev logiciel</h3>
-                        <p>Analyse de l'impact des assistants de code IA sur les flux de travail des développeurs (génération de blocs de code, détection de bugs et automatisation des tâches répétitives).</p>
-                    </div>
-                </section>
-
-                <section id="content-contact" class="tab-section inner-page">
-                    <h2>Documents & Contact</h2>
-                    <div class="project-box">
-                        <p>Document officiel requis pour l'épreuve E4 du BTS :</p>
-                        <a href="tableau-de-synthese-E4.pdf" download class="btn-dl">Télécharger le tableau de synthèse (PDF)</a>
-                    </div>
-                    <div class="footer-links">
-                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                        <a href="https://github.com" target="_blank">GitHub</a>
-                        <a href="mailto:ton.email@exemple.com">Email</a>
-                    </div>
-                </section>
-
+                        <span>veille</span>
+                    </button>
+                    <button class="menu-item-btn" data-target="window-contact">
+                        <div class="icon-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <span>contact</span>
+                    </button>
+                </nav>
             </div>
         </div>
 
-        <div class="flower-mascot">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#4A4A4A" stroke-width="1.2">
-                <circle cx="12" cy="12" r="3" fill="#FFF8D1" />
-                <path d="M12 5c-1.5 0-2.5 1.5-2.5 3s1 3 2.5 3 2.5-1.5 2.5-3-1-3-2.5-3z" fill="#FFF"/>
-                <path d="M12 19c-1.5 0-2.5-1.5-2.5-3s1-3 2.5-3 2.5 1.5 2.5 3-1 3-2.5 3z" fill="#FFF"/>
-                <path d="M5 12c0-1.5 1.5-2.5 3-2.5s3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5z" fill="#FFF"/>
-                <path d="M19 12c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2.5 3 2.5 3-1 3-2.5z" fill="#FFF"/>
-                <path d="M14 15c2 2 5 1 6 0s0-4-2-5" stroke-dasharray="2 1"/>
-            </svg>
+        <div class="os-window popup-window" id="window-about">
+            <div class="os-header">
+                <span class="window-title">à propos</span>
+                <span class="btn-close">[x]</span>
+            </div>
+            <div class="window-body inner-page">
+                <div class="about-layout">
+                    <div class="profile-meta">
+                        <h2 class="profile-name"><span class="highlight">Sirine Grich</span></h2>
+                        <p class="job-title">Développeuse web en alternance</p>
+                        <p class="meta-info">SIET Déménagement</p>
+                    </div>
+                </div>
+                
+                <div class="profile-text">
+                    <p>Je suis actuellement en BTS SIO (Solutions Logicielles et Applications Métiers) option SLAM. Passionnée par le développement et le design épuré, j'aime concevoir des applications web claires, modernes et performantes. Depuis un an, je combine rigueur technique et créativité pour répondre aux besoins numériques de mon entreprise d'accueil. J'accompagne la digitalisation de leurs services en créant des interfaces intuitives et en optimisant leur architecture système, avec l'ambition de fournir des outils toujours plus fiables aux utilisateurs.</p>
+                </div>
+
+                <div class="parcours-section">
+                    <h3>Mon parcours</h3>
+                    <ul class="timeline">
+                        <li>
+                            <span class="date">Sept. 2025</span>
+                            <div class="details">
+                                <strong>BTS SIO option SLAM</strong>
+                                <span>Nexa Campus Lyon | Ecole tech et digital</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="date">2020 - 2024</span>
+                            <div class="details">
+                                <strong>Licence droit (L2)</strong>
+                                <span>Université Jean-Moulin Lyon 3</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="date">2019 - 2020</span>
+                            <div class="details">
+                                <strong>Licence biologie (L1)</strong>
+                                <span>Université Claude Bernard Lyon 1</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="date">2019</span>
+                            <div class="details">
+                                <strong>Baccalauréat scientifique option SVT</strong>
+                                <span>Lycée Lacassagne</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="os-window popup-window" id="window-entreprise">
+            <div class="os-header">
+                <span class="window-title">entreprise</span>
+                <span class="btn-close">[x]</span>
+            </div>
+            <div class="window-body inner-page">
+                <h2>SIET Déménagement</h2>
+                <p class="meta-info">PME spécialisée dans le transport et la logistique</p>
+                
+                <div class="custom-block">
+                    <strong>Refonte web sur-mesure</strong>
+                    <p>Je refais totalement leur site internet via WordPress. Au lieu d'utiliser des modèles classiques, je code des blocs personnalisés pour répondre exactement à leur charte graphique et à leurs besoins spécifiques en termes d'expérience utilisateur.</p>
+                </div>
+
+                <div class="custom-block">
+                    <strong>Optimisation matérielle et réseau</strong>
+                    <p>J'ai mis à jour et réorganisé l'ensemble du parc informatique. J'ai notamment installé de nouveaux disques durs internes sur les postes de travail afin d'optimiser le stockage, la sécurité et la vitesse de traitement des données de l'entreprise.</p>
+                </div>
+
+                <div class="custom-block">
+                    <strong>Développement de base de données (Mission SLAM)</strong>
+                    <p>Afin de faciliter la gestion des devis, j'ai modélisé et mis en place une base de données relationnelle interne. Cet outil permet aux équipes commerciales de retrouver rapidement les informations clients et l'historique des interventions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="os-window popup-window" id="window-projets">
+            <div class="os-header">
+                <span class="window-title">projets</span>
+                <span class="btn-close">[x]</span>
+            </div>
+            <div class="window-body inner-page">
+                <h2>Mes réalisations</h2>
+                
+                <article class="project-box">
+                    <div class="project-title-row">
+                       <h3>Laboratoire GSB (Galaxy Swiss Bourdin)</h3>
+                       <span class="meta-info">Projet de Référentiel</span>
+                    </div>
+                    <div class="tags">
+                        <span>C#</span><span>PHP</span><span>MVC</span><span>MySQL</span>
+                    </div>
+                    <p>Développement de l'application de gestion des frais de visite pour les délégués médicaux du laboratoire. Implémentation des règles métiers complexes, modélisation de la base de données relationnelle et sécurisation des accès.</p>
+                </article>
+
+                <article class="project-box">
+                    <div class="project-title-row">
+                       <h3>Quiz Interactif type Kahoot</h3>
+                       <span class="meta-info">Application Bureau</span>
+                    </div>
+                    <div class="tags">
+                        <span>C#</span><span>.NET</span><span>SQL Server</span><span>UI/UX</span>
+                    </div>
+                    <p>Conception et développement d'une application applicative de quiz dynamique inspirée de Kahoot. Prise en charge complète des sessions de questions, calcul des scores en temps réel et affichage du tableau de classement.</p>
+                </article>
+
+                <article class="project-box">
+                    <div class="project-title-row">
+                       <h3>Refonte du site institutionnel</h3>
+                       <span class="meta-info">SIET Déménagement</span>
+                    </div>
+                    <div class="tags">
+                        <span>WordPress</span><span>PHP</span><span>Elementor</span><span>Custom Code</span>
+                    </div>
+                    <p>Conception et intégration de blocs de code personnalisés pour étendre les fonctionnalités d'Elementor gratuit. Utilisation de l'IA pour optimiser le refactoring des scripts et garantir un code propre.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="os-window popup-window" id="window-veille">
+            <div class="os-header">
+                <span class="window-title">veille</span>
+                <span class="btn-close">[x]</span>
+            </div>
+            <div class="window-body inner-page">
+                <h2>Veille technologique</h2>
+                <p>Dans le cadre de mon BTS SIO, j'effectue une veille constante sur l'évolution des outils de développement pour rester à la pointe des nouvelles technologies.</p>
+                
+                <div class="custom-block">
+                    <h3>Thème : L'IA au service de la productivité du développeur</h3>
+                    <p>J'analyse l'intégration de l'IA dans les IDE (GitHub Copilot, Cursor, ChatGPT) : automatisation des blocs répétitifs, aide au débuggage et refactoring de scripts complexes.</p>
+                </div>
+
+                <div class="veille-articles">
+                    <article class="veille-card">
+                        <div class="card-meta">
+                            <span>Mai 2026</span>
+                            <span>Source : Geeek</span>
+                        </div>
+                        <h4>Le bouleversement économique de GitHub Copilot</h4>
+                        <p>GitHub Copilot bascule sur une facturation à l'usage par tokens, les sessions de code agentiques devenant trop coûteuses en ressources serveurs.</p>
+                        <div class="tags">
+                            <span>IA</span><span>Business</span>
+                        </div>
+                        <a href="https://www.geeek.org/github-copilot-facturation-token-ai-credits-2026/" target="_blank" class="btn-read">découvrir l'article</a>
+                    </article>
+
+                    <article class="veille-card">
+                        <div class="card-meta">
+                            <span>Mai 2026</span>
+                            <span>Source : Global Security Mag</span>
+                        </div>
+                        <h4>Les risques de sécurité avec Cursor IDE</h4>
+                        <p>Cursor est devenu l'IDE IA le plus utilisé, mais un rapport met en garde : l'accès global au code peut exposer les développeurs à des cyberattaques sophistiquées.</p>
+                        <div class="tags">
+                            <span>Cybersécurité</span><span>IA</span>
+                        </div>
+                        <a href="https://www.globalsecuritymag.fr/proofpoint-cursor-ide-expose-les-developpeurs-a-des-cyberattaques-sophistiquees.html" target="_blank" class="btn-read">découvrir l'article</a>
+                    </article>
+
+                    <article class="veille-card">
+                        <div class="card-meta">
+                            <span>Mai 2026</span>
+                            <span>Source : Decodeur IA</span>
+                        </div>
+                        <h4>Bilan 2026 : l'IA génère 41% du code mondial</h4>
+                        <p>Un panorama complet expliquant que 41% du code mondial est généré par l'IA, mais que 45% contient des vulnérabilités, rendant la revue de code humaine indispensable.</p>
+                        <div class="tags">
+                            <span>IA</span><span>Productivité</span>
+                        </div>
+                        <a href="https://www.decodeur-ia.com/articles/outils-ia-developpeurs-panorama-2026/" target="_blank" class="btn-read">découvrir l'article</a>
+                    </article>
+                </div>
+
+                <div class="curation-tools">
+                    <h3>Outils de curation</h3>
+                    <p>Pour mener à bien cette veille, j'utilise principalement <strong class="tool-name">Feedly</strong> pour agréger les flux RSS et <strong class="tool-name">Notion</strong> pour classer et synthétiser les articles pertinents.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="os-window popup-window" id="window-contact">
+            <div class="os-header">
+                <span class="window-title">contact</span>
+                <span class="btn-close">[x]</span>
+            </div>
+            <div class="window-body inner-page">
+                <h2>Me contacter</h2>
+                <p style="margin-bottom: 20px;">N'hésitez pas à consulter mon profil GitHub ou à m'envoyer un email pour toute question ou opportunité.</p>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/Sirine25vps" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px; margin-right:5px; vertical-align:middle;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        GitHub
+                    </a>
+                    <a href="mailto:gr.sirine23@gmail.com">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px; margin-right:5px; vertical-align:middle;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        gr.sirine23@gmail.com
+                    </a>
+                </div>
+
+                <div class="project-box" style="margin-top: 40px;">
+                    <p>Document officiel requis pour l'épreuve E4 du BTS :</p>
+                    <a href="tableau-de-synthese-E4.pdf" download class="btn-dl">Télécharger le tableau E4 (PDF)</a>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -154,24 +278,29 @@
     </footer>
 
     <script>
-        // Clic sur les icônes du menu (Ouvrir un onglet)
+        let zIndexCounter = 10;
+
         document.querySelectorAll('.menu-item-btn').forEach(button => {
             button.addEventListener('click', () => {
-                const tabId = button.getAttribute('data-tab');
-                const tabTitle = button.getAttribute('data-title');
-                
-                document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-                document.getElementById(`content-${tabId}`).classList.add('active');
-                
-                document.getElementById('current-tab-title').textContent = tabTitle;
+                const targetId = button.getAttribute('data-target');
+                const popup = document.getElementById(targetId);
+                popup.classList.add('active');
+                zIndexCounter++;
+                popup.style.zIndex = zIndexCounter;
             });
         });
 
-        // Clic sur le bouton ROUGE MacBook (Fermer l'onglet et retourner à l'accueil)
-        document.getElementById('btn-close-tab').addEventListener('click', () => {
-            document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-            document.getElementById('content-home').classList.add('active');
-            document.getElementById('current-tab-title').textContent = "Accueil";
+        document.querySelectorAll('.btn-close').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.target.closest('.popup-window').classList.remove('active');
+            });
+        });
+
+        document.querySelectorAll('.popup-window').forEach(window => {
+            window.addEventListener('mousedown', () => {
+                zIndexCounter++;
+                window.style.zIndex = zIndexCounter;
+            });
         });
     </script>
 </body>
