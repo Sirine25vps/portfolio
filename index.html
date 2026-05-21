@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sirine Grich</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="desktop-area">
+        
+        <div class="macbook-window">
+            
+            <div class="macbook-header">
+                <div class="macbook-dots">
+                    <span class="dot dot-close" id="btn-close-tab" title="Fermer l'onglet"></span>
+                    <span class="dot dot-minimize"></span>
+                    <span class="dot dot-maximize"></span>
+                </div>
+                <span class="window-title" id="current-tab-title">Accueil</span>
+            </div>
+
+            <div class="window-body">
+                
+                <section id="content-home" class="tab-section active">
+                    <div class="home-hero">
+                        <h1 class="hero-main-title">Salut ! <span class="highlight">Je suis Sirine</span></h1>
+                        <p class="hero-subtitle">Développeuse web, étudiante en BTS SIO SLAM</p>
+                    </div>
+
+                    <nav class="inner-menu">
+                        <button class="menu-item-btn" data-tab="about" data-title="À propos">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            </div>
+                            <span>À propos</span>
+                        </button>
+
+                        <button class="menu-item-btn" data-tab="entreprise" data-title="Entreprise">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            </div>
+                            <span>Entreprise</span>
+                        </button>
+
+                        <button class="menu-item-btn" data-tab="projets" data-title="Projets">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <span>Projets</span>
+                        </button>
+
+                        <button class="menu-item-btn" data-tab="veille" data-title="Veille tech">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            </div>
+                            <span>Veille</span>
+                        </button>
+
+                        <button class="menu-item-btn" data-tab="contact" data-title="Contact">
+                            <div class="icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <span>Contact</span>
+                        </button>
+                    </nav>
+                </section>
+
+                <section id="content-about" class="tab-section inner-page">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/6114319242508135783" alt="Sirine Grich">
+                        </div>
+                        <div class="profile-meta">
+                            <h2 class="profile-name"><span class="highlight">Sirine</span> Grich</h2>
+                            <p class="job-title">Développeuse web en alternance</p>
+                            <p class="meta-info">Lyon, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-text">
+                        <p>Je prépare actuellement mon BTS SIO option SLAM (Solutions Logicielles et Applications Métiers). Passionnée par le développement et le design épuré, j'aime concevoir des applications web claires, modernes et performantes.</p>
+                        <br>
+                        <p>Depuis un an, je combine rigueur technique et créativité pour répondre aux besoins numériques de mon entreprise d'accueil, dans laquelle je développe des blocs de code sur-mesure via WordPress.</p>
+                    </div>
+                </section>
+
+                <section id="content-entreprise" class="tab-section inner-page">
+                    <h2>SIET Déménagement</h2>
+                    <p class="meta-info">PME spécialisée dans le transport et la logistique</p>
+                    <div class="custom-block">
+                        <strong>Mon rôle au pôle informatique :</strong>
+                        <p>Intégration au sein de l'équipe technique pour le développement, la maintenance et l'optimisation des applications internes et des plateformes web de l'entreprise.</p>
+                    </div>
+                </section>
+
+                <section id="content-projets" class="tab-section inner-page">
+                    <h2>Mes réalisations</h2>
+                    <article class="project-box">
+                        <div class="project-title-row">
+                           <h3>Refonte du site institutionnel</h3>
+                           <span class="loc">SIET Déménagement</span>
+                        </div>
+                        <div class="tags">
+                            <span>WordPress</span><span>Elementor</span><span>PHP</span><span>Custom code</span>
+                        </div>
+                        <p>Conception et intégration de blocs de code personnalisés pour étendre les fonctionnalités d'Elementor gratuit. Utilisation de l'IA pour optimiser le refactoring des scripts PHP/CSS.</p>
+                    </article>
+                </section>
+
+                <section id="content-veille" class="tab-section inner-page">
+                    <h2>Veille technologique</h2>
+                    <div class="custom-block">
+                        <h3>L'intelligence artificielle dans le dev logiciel</h3>
+                        <p>Analyse de l'impact des assistants de code IA sur les flux de travail des développeurs (génération de blocs de code, détection de bugs et automatisation des tâches répétitives).</p>
+                    </div>
+                </section>
+
+                <section id="content-contact" class="tab-section inner-page">
+                    <h2>Documents & Contact</h2>
+                    <div class="project-box">
+                        <p>Document officiel requis pour l'épreuve E4 du BTS :</p>
+                        <a href="tableau-de-synthese-E4.pdf" download class="btn-dl">Télécharger le tableau de synthèse (PDF)</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                        <a href="https://github.com" target="_blank">GitHub</a>
+                        <a href="mailto:ton.email@exemple.com">Email</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="flower-mascot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4A4A4A" stroke-width="1.2">
+                <circle cx="12" cy="12" r="3" fill="#FFF8D1" />
+                <path d="M12 5c-1.5 0-2.5 1.5-2.5 3s1 3 2.5 3 2.5-1.5 2.5-3-1-3-2.5-3z" fill="#FFF"/>
+                <path d="M12 19c-1.5 0-2.5-1.5-2.5-3s1-3 2.5-3 2.5 1.5 2.5 3-1 3-2.5 3z" fill="#FFF"/>
+                <path d="M5 12c0-1.5 1.5-2.5 3-2.5s3 1 3 2.5-1.5 2.5-3 2.5-3-1-3-2.5z" fill="#FFF"/>
+                <path d="M19 12c0-1.5-1.5-2.5-3-2.5s-3 1-3 2.5 1.5 2.5 3 2.5 3-1 3-2.5z" fill="#FFF"/>
+                <path d="M14 15c2 2 5 1 6 0s0-4-2-5" stroke-dasharray="2 1"/>
+            </svg>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 - Sirine Grich - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Clic sur les icônes du menu (Ouvrir un onglet)
+        document.querySelectorAll('.menu-item-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                const tabTitle = button.getAttribute('data-title');
+                
+                document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+                document.getElementById(`content-${tabId}`).classList.add('active');
+                
+                document.getElementById('current-tab-title').textContent = tabTitle;
+            });
+        });
+
+        // Clic sur le bouton ROUGE MacBook (Fermer l'onglet et retourner à l'accueil)
+        document.getElementById('btn-close-tab').addEventListener('click', () => {
+            document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('content-home').classList.add('active');
+            document.getElementById('current-tab-title').textContent = "Accueil";
+        });
+    </script>
+</body>
+</html>
