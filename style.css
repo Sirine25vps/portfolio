@@ -993,3 +993,60 @@ a {
     width: 20px;
     height: 20px;
 }
+
+/* Transforme la carte en conteneur flexible vertical */
+.premium-doc-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* S'assure que la carte prend toute la hauteur disponible dans la grille */
+}
+
+/* Pousse le conteneur du bouton tout en bas */
+.premium-doc-footer {
+    margin-top: auto; 
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 24px;
+}
+
+.project-tags span {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background-color: rgba(232, 129, 151, 0.22);
+    color: #ffffff;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.project-divider {
+    border: 0;
+    border-top: 1px solid rgba(64, 64, 64, 0.16);
+    margin: 24px 0 18px;
+}
+
+.btn-read {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 12px 18px;
+    min-width: 180px;
+    border-radius: 10px;
+    background-color: var(--highlight);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.96rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-read:hover {
+    background-color: var(--text-dark);
+    transform: translateY(-2px);
+}
